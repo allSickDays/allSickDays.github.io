@@ -3,7 +3,7 @@
   File: index.html
   Project: All Sick Days | Coming Soon
   Created: 10.21.2025
-  Updated: 10.21.2025
+  Updated: 11.02.2025
   Author: Faro Digital Studio
 -->
 <html lang="en">
@@ -103,23 +103,16 @@
   }
   </script>
 
-  <!-- Analytics (optional): set data-ga on <body data-ga="G-XXXX..."> to enable -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZT6RHXYET"></script>
   <script>
-    (function() {
-      const gaIdFromBody = () => document.currentScript && document.body ? document.body.getAttribute('data-ga') : null;
-      const id = gaIdFromBody();
-      if (!id) return;
-      const s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
-      document.head.appendChild(s);
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
-      window.gtag = gtag;
-      gtag('js', new Date());
-      gtag('config', id);
-    })();
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BZT6RHXYET');
   </script>
+
 </head>
 
 <body class="index-page" data-ga="">
@@ -161,7 +154,7 @@
           <div class="col-lg-5 hero-newsletter mt-4">
             <div class="d-grid">
               <a class="btn btn-primary fw-bold" target="_blank" rel="noopener" href="https://www.instagram.com/allsickdays" aria-label="Join the movement on Instagram">
-                Join the Movement on Instagram
+                Get Sick on Instagram
               </a>
             </div>
           </div>
