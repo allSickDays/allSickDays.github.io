@@ -2,7 +2,7 @@
   File: main.css
   Project: All Sick Days | Coming Soon
   Created: 10.21.2025
-  Updated: 10.21.2025
+  Updated: 11.09.2025
   Author: Faro Digital Studio
 --------------------------------------------------------------*/
 /* Fonts */
@@ -1282,4 +1282,16 @@ input[type="submit"]:focus {
   --nav-dropdown-background-color: #000000;
   --nav-dropdown-color: #FFFFFF;
   --nav-dropdown-hover-color: #FFFFFF;
+}
+
+/* Mirror body.scrolled -> header look (fallback if JS header toggle is edited later) */
+body.scrolled #header {
+  --background-color: rgba(255, 255, 255, 0.86);
+  background-color: var(--background-color);
+  backdrop-filter: saturate(140%) blur(6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+  --nav-color: #000000;
+  --nav-hover-color: #FFA726;
+  --heading-color: #000000;
 }
